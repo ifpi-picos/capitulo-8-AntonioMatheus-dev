@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>modolerizção de swoftre</title>
+</head>
+<body>
+
+    <h1>Três Vantagens da Modularização</h1>
+
+<section>
+    <div id="txt">
+    <strong>MODULARIZAÇÃO EM PROJETOS DE SOFTWARE</strong>
+    </div>
+
+    <div>
+        <ul><strong>- Reusabilidade do Código:</strong> Permite que módulos específicos sejam reaproveitados em diferentes partes de um sistema ou em projetos diferentes.</ul>
+
+        <ul><strong>- Manutenção Simplificada:</strong> Facilita a identificação e correção de problemas, uma vez que as mudanças podem ser realizadas em módulos específicos sem afetar o sistema como um todo.</ul>
+
+        <ul><strong>- Facilidade de Teste:</strong> Possibilita a realização de testes unitários mais eficientes, pois é possível isolar e testar cada módulo separadamente, garantindo uma cobertura mais abrangente.</ul>
+    </div>
+</section>
+
+    <div id="Reusabilidade">
+        <ol>
+            <strong>
+                <li>Reusabilidade do Código</li>
+            </strong>
+            A reutilização do código é uma das principais vantagens de boas práticas <br>de programação. Ela se refere à capacidade de criar partes do código <br>que podem ser utilizadas em diferentes partes de um projeto ou até<br> mesmo em projetos futuros, sem a necessidade <br>
+            <hr>
+            Exemplo real : Em um sistema de e-commerce, uma função que calcula o <br>preço de um produto com desconto pode ser reutilizada em várias <br>partes do sistema, como na tela de checkout, nas promoções e nos cálculos <br> de preços personalizados.A reutilização desse código torna o <br>sistema mais eficiente e evita a duplicação de lógica.
+        </ol>
+    </div>
+    <div id="ReusabilidadeCD">
+        <strong>EXEMPLO: Função reutilizável para calcular preço com desconto</strong>
+    <pre>
+        <code>
+function calcularDesconto(preco, desconto) {
+  return preco - (preco * desconto / 100);
+}
+        </code>
+    </pre>
+    </div>
+
+
+
+    <div id="Manutenção">
+<ol start="2">
+   <strong>
+       <li>Manutenção Simplificada</li>
+   </strong>
+
+   A manutenção simplificada é a capacidade de alterar, corrigir ou adicionar funcionalidades ao código de forma rápida e sem causar impacto em outras partes do sistema. Isso é facilitado quando o código é modular, ou seja, dividido em funções e componentes menores e bem definidos. Em projetos grandes e complexos, a manutenção simplificada é crucial, pois permite que as equipes façam mudanças de f
+    
+    Exemplo real : Em um sistema de pagamentos, você pode ter uma função específica apenas para processar o pagamento. Se um novo método de pagamento integrado, você pode modificar apenas essa função, sem a necessidade de alterar todo o código do sistema
+</ol>
+    </div>
+<div id="ManutençãoCD">
+    <strong>EXEMPLO: Manutenção simplificada</strong>
+<pre>
+    <code>
+// Função isolada para processar pagamento
+function processarPagamento(valor) {
+
+}
+  // lógica de pagamento   
+    </code>
+</pre>
+</div>
+
+
+<div id="Facilidade">
+    <ol start="3">
+        <strong>
+            <li>Facilidade de Teste</li>
+        </strong>
+        A facilidade de teste refere-se à capacidade de testar partes específicas do código
+
+Exemplo real : Em um sistema de login, você pode criar uma função de autenticação e testar se ela retorna o comportamento correto em diferentes cenários. Um teste unitário pode garantir que o sistema sempre seja válido como credenciais corretamente.
+    </ol>
+</div>
+
+<div id="FacilidadeCD">
+    <p class="teste"><strong>EXMPLO:Facilidade de Teste</strong></p>
+<pre>
+    <code>
+function autenticarUsuario(usuario, senha) {
+if (usuario === "admin" && senha === "1234") {
+  return true;
+}
+return false;
+}
+
+// Teste unitário simples
+console.assert(autenticarUsuario("admin", "1234")
+ === true, "Erro: Credenciaiválidas");
+console.assert(autenticarUsuario("admin", "senhaErrada")
+ === false, "ErroCredenciais inválidas");
+      </code>
+</pre>
+</div>
+
+</body>
+</html>
